@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB790AF32025224F00F42918 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB790AF12025224F00F42918 /* DataModel.xcdatamodeld */; };
+		DB790AF5202522B700F42918 /* DatabaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB790AF4202522B700F42918 /* DatabaseClient.swift */; };
+		DB790AFB20252B3900F42918 /* PostStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB790AFA20252B3900F42918 /* PostStruct.swift */; };
+		DB790AFD202533DC00F42918 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB790AFC202533DC00F42918 /* Reachability.swift */; };
+		DB790B0020253B2600F42918 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB790AFE20253B2500F42918 /* Post+CoreDataClass.swift */; };
+		DB790B0120253B2600F42918 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB790AFF20253B2500F42918 /* Post+CoreDataProperties.swift */; };
 		DBBF8370202218AE00AE5682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF836F202218AE00AE5682 /* AppDelegate.swift */; };
-		DBBF8372202218AE00AE5682 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF8371202218AE00AE5682 /* ViewController.swift */; };
+		DBBF8372202218AE00AE5682 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF8371202218AE00AE5682 /* PostsViewController.swift */; };
 		DBBF8375202218AE00AE5682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBF8373202218AE00AE5682 /* Main.storyboard */; };
 		DBBF8377202218AE00AE5682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBF8376202218AE00AE5682 /* Assets.xcassets */; };
 		DBBF837A202218AE00AE5682 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBF8378202218AE00AE5682 /* LaunchScreen.storyboard */; };
 		DBBF8385202218AE00AE5682 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF8384202218AE00AE5682 /* NetworkingTests.swift */; };
 		DBBF8390202218AE00AE5682 /* NetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF838F202218AE00AE5682 /* NetworkingUITests.swift */; };
+		DBBF839E202218CE00AE5682 /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF839D202218CE00AE5682 /* NetworkingClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB790AF22025224F00F42918 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		DB790AF4202522B700F42918 /* DatabaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseClient.swift; sourceTree = "<group>"; };
+		DB790AFA20252B3900F42918 /* PostStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostStruct.swift; sourceTree = "<group>"; };
+		DB790AFC202533DC00F42918 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		DB790AFE20253B2500F42918 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB790AFF20253B2500F42918 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DBBF836C202218AE00AE5682 /* Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBBF836F202218AE00AE5682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBBF8371202218AE00AE5682 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBBF8371202218AE00AE5682 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		DBBF8374202218AE00AE5682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBBF8376202218AE00AE5682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBBF8379202218AE00AE5682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +60,7 @@
 		DBBF838B202218AE00AE5682 /* NetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBBF838F202218AE00AE5682 /* NetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingUITests.swift; sourceTree = "<group>"; };
 		DBBF8391202218AE00AE5682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBBF839D202218CE00AE5682 /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +111,19 @@
 		DBBF836E202218AE00AE5682 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				DB790AFE20253B2500F42918 /* Post+CoreDataClass.swift */,
+				DB790AFF20253B2500F42918 /* Post+CoreDataProperties.swift */,
 				DBBF836F202218AE00AE5682 /* AppDelegate.swift */,
-				DBBF8371202218AE00AE5682 /* ViewController.swift */,
+				DBBF8371202218AE00AE5682 /* PostsViewController.swift */,
+				DBBF839D202218CE00AE5682 /* NetworkingClient.swift */,
+				DB790AF4202522B700F42918 /* DatabaseClient.swift */,
+				DB790AF12025224F00F42918 /* DataModel.xcdatamodeld */,
+				DB790AFA20252B3900F42918 /* PostStruct.swift */,
 				DBBF8373202218AE00AE5682 /* Main.storyboard */,
 				DBBF8376202218AE00AE5682 /* Assets.xcassets */,
 				DBBF8378202218AE00AE5682 /* LaunchScreen.storyboard */,
 				DBBF837B202218AE00AE5682 /* Info.plist */,
+				DB790AFC202533DC00F42918 /* Reachability.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -259,8 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBBF8372202218AE00AE5682 /* ViewController.swift in Sources */,
+				DBBF8372202218AE00AE5682 /* PostsViewController.swift in Sources */,
+				DB790AFB20252B3900F42918 /* PostStruct.swift in Sources */,
+				DB790B0120253B2600F42918 /* Post+CoreDataProperties.swift in Sources */,
+				DB790AF32025224F00F42918 /* DataModel.xcdatamodeld in Sources */,
+				DB790AFD202533DC00F42918 /* Reachability.swift in Sources */,
 				DBBF8370202218AE00AE5682 /* AppDelegate.swift in Sources */,
+				DB790B0020253B2600F42918 /* Post+CoreDataClass.swift in Sources */,
+				DBBF839E202218CE00AE5682 /* NetworkingClient.swift in Sources */,
+				DB790AF5202522B700F42918 /* DatabaseClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +586,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DB790AF12025224F00F42918 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DB790AF22025224F00F42918 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = DB790AF22025224F00F42918 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DBBF8364202218AE00AE5682 /* Project object */;
 }
